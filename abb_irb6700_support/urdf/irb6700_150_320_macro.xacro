@@ -1,0 +1,296 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://ros.org/wiki/xacro">
+  <xacro:macro name="abb_irb6700_150_320" params="prefix">
+    <!-- link list -->
+    <link name="${prefix}base_link">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/collision/base_link.stl"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/visual/base_link.stl"/>
+        </geometry>
+        <material name="white">
+          <color rgba="0.75294 0.75294 0.75294 1"/>
+        </material>
+      </visual>
+      <dynamics damping="1.0"/>
+      <inertial>
+          <mass value="0.1" />
+          <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+    </link>
+
+    <link name="${prefix}link_1">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/collision/link_1.stl"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/visual/link_1.stl"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <dynamics damping="1.0"/>
+      <inertial>
+          <mass value="0.1" />
+          <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+    </link>
+    <link name="${prefix}link_2">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/collision/link_2.stl"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/visual/link_2.stl"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <dynamics damping="1.0"/>
+      <inertial>
+          <mass value="0.1" />
+          <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+    </link>
+    <link name="${prefix}link_3">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/collision/link_3.stl"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/visual/link_3.stl"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <dynamics damping="1.0"/>
+      <inertial>
+          <mass value="0.1" />
+          <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+    </link>
+    <link name="${prefix}link_4">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/collision/link_4.stl"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/visual/link_4.stl"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <dynamics damping="1.0"/>
+      <inertial>
+          <mass value="0.1" />
+          <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+    </link>
+    <link name="${prefix}link_5">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/collision/link_5.stl"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/visual/link_5.stl"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <dynamics damping="1.0"/>
+      <inertial>
+          <mass value="0.1" />
+          <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+    </link>
+    <link name="${prefix}link_6">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/collision/link_6.stl"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/visual/link_6.stl"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <dynamics damping="1.0"/>
+      <inertial>
+          <mass value="0.1" />
+          <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+    </link>
+    <link name="${prefix}tool0">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/collision/tool0.stl"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/visual/tool0.stl"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <dynamics damping="1.0"/>
+      <inertial>
+          <mass value="0.1" />
+          <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+    </link>
+
+    <!--Cylinder and piston -->
+    <link name="${prefix}link_cylinder">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/collision/cylinder_link.stl"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/visual/cylinder_link.stl"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <dynamics damping="1.0"/>
+      <inertial>
+          <mass value="0.1" />
+          <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+    </link>
+    <link name="${prefix}link_piston">
+      <collision name="collision">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/collision/piston_link.stl"/>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh filename="package://abb_irb6700_support/meshes/irb6700_150_320/visual/piston_link.stl"/>
+        </geometry>
+        <material name="white"/>
+      </visual>
+      <dynamics damping="1.0"/>
+      <inertial>
+          <mass value="0.1" />
+          <inertia ixx="0.03" iyy="0.03" izz="0.03" ixy="0.0" ixz="0.0" iyz="0.0" />
+      </inertial>
+    </link>
+    <!-- end of link list -->
+
+    <!-- joint list -->
+    <joint type="revolute" name="${prefix}joint_1">
+      <origin xyz="0 0 0.3735" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}link_1"/>
+      <limit effort="100" lower="-3.8397" upper="3.8397" velocity="1.7453"/>
+    </joint>
+    <joint type="revolute" name="${prefix}joint_2">
+      <origin xyz="0.32 -0.14 0.4065" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_2"/>
+      <limit effort="100" lower="-1.1345" upper="1.4835" velocity="1.5708"/>
+    </joint>
+    <joint type="revolute" name="${prefix}joint_3">
+      <origin xyz="0 -0.144 1.28" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_3"/>
+      <limit effort="100" lower="-3.1416" upper="1.2217" velocity="1.5708"/>
+    </joint>
+    <joint type="revolute" name="${prefix}joint_4">
+      <origin xyz="0.23369 0.284 0.2" rpy="0 0 0"/>
+      <axis xyz="1 0 0"/>
+      <parent link="${prefix}link_3"/>
+      <child link="${prefix}link_4"/>
+      <limit effort="100" lower="-5.236" upper="5.236" velocity="2.9671"/>
+    </joint>
+    <joint type="revolute" name="${prefix}joint_5">
+      <origin xyz="1.3588 -0.00075 0" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <parent link="${prefix}link_4"/>
+      <child link="${prefix}link_5"/>
+      <limit effort="100" lower="-2.2689" upper="2.2689" velocity="2.0944"/>
+    </joint>
+    <joint type="continuous" name="${prefix}joint_6">
+      <origin xyz="0.165 0.00075 0" rpy="0 0 0"/>
+      <axis xyz="1 0 0"/>
+      <parent link="${prefix}link_5"/>
+      <child link="${prefix}link_6"/>
+      <limit effort="100" lower="0" upper="0" velocity="3.3161"/>
+    </joint>
+    <joint type="fixed" name="${prefix}joint_6-tool0">
+      <parent link="${prefix}link_6"/>
+      <child link="${prefix}tool0"/>
+      <origin xyz="0.132 0 0" rpy="0 0 0"/>
+    </joint>
+    <joint type="continuous" name="${prefix}joint_cylinder">
+      <origin xyz="-0.349 -0.194 0.2645" rpy="0 -0.2091 0"/>
+      <axis xyz="0 1 0"/>
+      <parent link="${prefix}link_1"/>
+      <child link="${prefix}link_cylinder"/>
+      <mimic joint="${prefix}joint_2" multiplier="-0.2086"/>
+    </joint>
+    <joint type="continuous" name="${prefix}joint_piston">
+      <origin xyz="-0.2087 -0.054 -0.04437" rpy="0 -0.2091 0"/>
+      <axis xyz="0 1 0"/>
+      <parent link="${prefix}link_2"/>
+      <child link="${prefix}link_piston"/>
+      <mimic joint="${prefix}joint_2" multiplier="-1.2086"/>
+    </joint>
+    <!-- end of joint list -->
+
+    <xacro:macro name="joint_trans" params="joint">
+        <transmission name="trans_${joint}">
+            <type>transmission_interface/SimpleTransmission</type>
+            <joint name="${joint}">
+                <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+            </joint>
+            <actuator name="motor_${joint}">
+                <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+                <mechanicalReduction>1</mechanicalReduction>
+            </actuator>
+        </transmission>
+    </xacro:macro>
+    <xacro:joint_trans joint="joint_1"/>
+    <xacro:joint_trans joint="joint_2"/>
+    <xacro:joint_trans joint="joint_3"/>
+    <xacro:joint_trans joint="joint_4"/>
+    <xacro:joint_trans joint="joint_5"/>
+    <xacro:joint_trans joint="joint_6"/>
+    <xacro:joint_trans joint="joint_cylinder"/>
+    <xacro:joint_trans joint="joint_piston"/>
+
+    <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+            <robotNamespace>/</robotNamespace>
+        </plugin>
+    </gazebo>
+
+    <!-- ROS base_link to ABB World Coordinates transform -->
+    <link name="world" />
+    <joint name="world_to_base_link=" type="fixed">
+         <parent link="world"/>
+         <child link="base_link"/>
+    </joint>
+    <link name="${prefix}base" />
+    <joint name="${prefix}base_link-base" type="fixed">
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}base"/>
+    </joint>
+  </xacro:macro>
+</robot>
